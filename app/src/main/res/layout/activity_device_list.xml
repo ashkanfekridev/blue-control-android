@@ -1,0 +1,34 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DeviceList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ToggleButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick_EnableDisable_Bluetooth"
+        android:id="@+id/Tbtn_EnableDisable_Bluetooth"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/Bluetooth_btn_ShowPairedDevices"
+        android:onClick="onClick_Bluetooth_btn_ShowPairedDevices"
+        android:text="Paired Devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+    <TextView
+        android:text="Paired Devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"/>
+    <ListView
+        android:id="@+id/Bluetooth_lv_PairedDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
